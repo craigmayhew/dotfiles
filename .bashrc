@@ -25,3 +25,11 @@ function cd {
 #user specific settings
 HISTSIZE=10000
 HISTFILESIZE=20000
+
+# Colorize ls by default
+alias ls='ls --color=auto'
+
+# Colorize grep/egrep/fgrep by default
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
