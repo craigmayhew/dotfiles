@@ -1,3 +1,5 @@
+
+#user specific functions
 function limll {
     limit=${1:-20}
     ls -l | head -n $limit
@@ -19,3 +21,7 @@ function cd {
         clear; pwd; limll;
     fi
 }
+
+#user specific settings
+HISTSIZE=10000
+HISTFILESIZE=20000
