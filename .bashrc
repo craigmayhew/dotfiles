@@ -25,8 +25,13 @@ function cd {
 #user specific settings
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
     # linux
-    HISTSIZE=10000
-    HISTFILESIZE=20000
+    
+    # aggregate history of all terminals to same .history file
+    shopt -s histappend
+    export HISTSIZE=100000
+    export HISTFILESIZE=100000
+    export HISTCONTROL=ignoredups:erasedups
+    export PROMPT_COMMAND="history -a;history -c;history -r;$PROMPT_COMMAND"
     
     # Colorize ls by default
     alias ls='ls --color=auto'
