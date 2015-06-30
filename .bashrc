@@ -40,14 +40,4 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     alias grep='grep --color=auto'
     alias egrep='egrep --color=auto'
     alias fgrep='fgrep --color=auto'
-elif [[ "$OSTYPE" == "darwin"* ]]; then
-    # Mac OSX
-elif [[ "$OSTYPE" == "cygwin" ]]; then
-    # POSIX compatibility layer and Linux environment emulation for Windows
-elif [[ "$OSTYPE" == "msys" ]]; then
-    # Lightweight shell and GNU utilities compiled for Windows
-elif [[ "$OSTYPE" == "freebsd"* ]]; then
-    # freebsd
-else
-    # Unknown
 fi
