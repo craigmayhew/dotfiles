@@ -2,10 +2,10 @@
 
 
 #### .ssh/authorized_keys
-  My current public encryption key.
+  - My current public encryption key.
 
 #### .bash_history
-  An initital history template that contains some useful commands.
+  - An initital history template that contains some useful commands.
 
 #### .bash_profile
   - Define alias commands e.g. l='ls -lha'
