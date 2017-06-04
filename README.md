@@ -30,3 +30,6 @@ cd /home/user/ && git clone https://github.com/craigmayhew/dotfiles.git && rsync
   - Use pathogen
   - Set syntax highlighting
   - Set colours
+
+## Further Reading
+https://dotfiles.github.io/
