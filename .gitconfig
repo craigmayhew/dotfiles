@@ -4,6 +4,7 @@
 
 [alias]
   lol = log --pretty=oneline --abbrev-commit --graph --decorate
+  lola = log --pretty=oneline --abbrev-commit --graph --decorate --all
   lg = log --graph --decorate --abbrev-commit --pretty=format:'%C(bold red)%h%C(reset) %C(bold blue)%an%C(reset) -%C(cyan)%d%C(reset) %s %C(bold cyan)(%cr)'
   
 [color]
