@@ -4,6 +4,9 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias l='ls -lha'
 
+alias docker_clean_images='docker rmi $(docker images -a --filter=dangling=true -q)'
+alias docker_clean_ps='docker rm $(docker ps --filter=status=exited --filter=status=created -q)'
+
 # define colours
 red='\e[0;31m'
 RED='\e[1;31m'
