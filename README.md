@@ -16,9 +16,6 @@ cd /home/user/ && git clone https://github.com/craigmayhew/dotfiles.git && rsync
 #### .ssh/authorized_keys
   - My current public encryption key.
 
-#### .bash_history
-  - An initital history template that contains some useful commands.
-
 #### .bash_profile
   - Define alias commands e.g. l='ls -lha'
   - Add colours to terminal
