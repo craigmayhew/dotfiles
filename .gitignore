@@ -16,3 +16,4 @@ examples.desktop
 .gitconfig
 .xsession*
 .vboxclient*
+.bash_history
