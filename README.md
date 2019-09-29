@@ -10,7 +10,7 @@ This repo is used by me to keep my environments identical. It contains my prefer
 **Warning:** If you want to give these dotfiles a try, make sure to backup your existing files or modify the below command to use an empty home directory!
 
 ```
-cd /home/user/ && git clone https://github.com/craigmayhew/dotfiles.git && rsync -a dotfiles/ /home/user/ && rm -rf /home/user/dotfiles
+cd ~/ && git clone https://github.com/craigmayhew/dotfiles.git && rsync -a dotfiles/ ~/ && rm -rf ~/dotfiles
 ```
 
 #### .ssh/authorized_keys
