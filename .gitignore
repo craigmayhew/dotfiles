@@ -1,6 +1,7 @@
 .bash_history
 .bash_logout
 .cache/
+.cargo/
 .compiz/
 .config/
 .ecryptfs
@@ -12,8 +13,10 @@
 .pki/
 .Private
 .profile
+.rustup/
 .ssh/
 .vboxclient*
+.vscode-server/
 .Xauthority
 .xsession*
 examples.desktop
