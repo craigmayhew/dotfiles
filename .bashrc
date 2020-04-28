@@ -40,3 +40,5 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     alias egrep='egrep --color=auto'
     alias fgrep='fgrep --color=auto'
 fi
+
+eval "$(starship init bash)"
