@@ -41,4 +41,9 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     alias fgrep='fgrep --color=auto'
 fi
 
+#rust compile optimizations
+export CARGO_INCREMENTAL=1
+export CARGO_BUILD_JOBS="$((nproc/2))"
+
 eval "$(starship init bash)"
+
