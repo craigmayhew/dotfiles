@@ -19,10 +19,12 @@ pkgs.mkShell {
 
   # Define environment variables
   shellHook = ''
+    # Add docker executables to path
     export PATH=$PATH:${pkgs.docker}/bin
-    echo "Environment setup complete. Happy coding, Craig!"
     # Initialize Starship prompt
     eval "$(starship init bash)"
+    # Display welcome message
+    echo "Environment setup complete. Happy coding, Craig!"
   '';
 
 }
