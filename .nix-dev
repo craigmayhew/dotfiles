@@ -14,12 +14,15 @@ pkgs.mkShell {
     pkgs.nodejs         # Node.js for JavaScript runtime
     pkgs.awscli         # AWS CLI for managing AWS services
     pkgs.ripgrep        # Ripgrep for fast text searching
+    pkgs.starship       # Starship prompt
   ];
 
   # Define environment variables
   shellHook = ''
     export PATH=$PATH:${pkgs.docker}/bin
     echo "Environment setup complete. Happy coding, Craig!"
+    # Initialize Starship prompt
+    eval "$(starship init bash)"
   '';
 
 }
