@@ -1,0 +1,24 @@
+# Nix file for setting up my development environment.
+
+{ pkgs ? import <nixpkgs> {} }:
+
+pkgs.mkShell {
+  # Define the packages to include in the environment
+  buildInputs = [
+    pkgs.rustc          # Rust compiler
+    pkgs.cargo          # Rust package manager
+    pkgs.python3        # Python 3 interpreter
+    pkgs.docker         # Docker for containerization
+    pkgs.git            # Git for version control
+    pkgs.vscode         # Visual Studio Code editor
+    pkgs.nodejs         # Node.js for JavaScript runtime
+    pkgs.awscli         # AWS CLI for managing AWS services
+  ];
+
+  # Define environment variables
+  shellHook = ''
+    export PATH=$PATH:${pkgs.docker}/bin
+    echo "Environment setup complete. Happy coding, Craig!"
+  '';
+
+}
