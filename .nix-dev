@@ -13,6 +13,7 @@ pkgs.mkShell {
     pkgs.vscode         # Visual Studio Code editor
     pkgs.nodejs         # Node.js for JavaScript runtime
     pkgs.awscli         # AWS CLI for managing AWS services
+    pkgs.ripgrep        # Ripgrep for fast text searching
   ];
 
   # Define environment variables
